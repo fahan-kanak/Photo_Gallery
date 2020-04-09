@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>My Photo Gallery</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/My_picture.png" type="image/x-icon">
+		<style>
+			body {
+				background: #222;
+				margin-top: 20px;
+				font-family: arial;
+				color: white;
+			}
+			
+			.thumbnails img {
+				height: 80px;
+				border: 4px solid #555;
+				padding: 1px;
+				margin: 0 10px 10px 0;
+			}
+			
+			.thumbnails img:hover {
+				border: 4px solid #00ccff;
+			}
+			
+			.preview img {
+				border: 4px solid #444;
+				padding: 1px;
+				width: 800px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container" style="text-align: center">
+			<h1>My Web Page Gallery</h1>
+			<br>
+			<div class="thumbnails">
+				<img onmouseover="preview.src=img1.src" style="cursor: pointer" id="img1" src="images/Boga_lake.jpg" alt="Boga lake pic">
+				<img onmouseover="preview.src=img2.src" style="cursor: pointer" id="img2" src="images/90278.jpg" alt="Bliss pic">
+				<img onmouseover="preview.src=img3.src" style="cursor: pointer" id="img3" src="images/nature.jpg" alt="nature pic">
+				<img onmouseover="preview.src=img4.src" style="cursor: pointer" id="img4" src="images/windows-xp-desktop-background-wallpaper-azul-800x600.jpg" alt="Azul pic">
+				<img onmouseover="preview.src=img5.src" style="cursor: pointer" id="img5" src="images/windows-xp-desktop-background-wallpaper-tulips-800x600.jpg" alt="Tulip pic">
+			</div>
+			<div class="preview" style="text-align: center">
+				<img id="preview" src="images/Boga_lake.jpg" alt="Boga lake pic">
+			</div>
+		</div>
+	</body>
+</html>
